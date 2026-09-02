@@ -1,4 +1,4 @@
-This project focuses on the design and RTL implementation of a **32-bit RISC-V Single-Cycle Processor** using Verilog HDL.
+This project focuses on the micro architecture to GDS skipping the verification of a **32-bit RISC-V Single-Cycle Processor** using Verilog HDL.
 
 The processor is based on the fundamental principles of a single-cycle CPU architecture, 
 where each instruction is fetched, decoded, executed, and completed within a single clock cycle.
