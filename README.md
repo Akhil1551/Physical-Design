@@ -8,3 +8,25 @@ where each instruction is fetched, decoded, executed, and completed within a sin
 
 source:http://www.r-5.org/files/books/computers/hw-layers/hardware/digital-desigh/David_Harris_Sarah_Harris-Digital_Design_and_Computer_Architecture-EN.pdf
 page Number: 375
+
+
+| Feature                 | MIPS                                               | RISC-V                                      |
+| ----------------------- | -------------------------------------------------- | ------------------------------------------- |
+| Full name               | Microprocessor without Interlocked Pipeline Stages | RISC-V                                      |
+| ISA type                | RISC                                               | RISC                                        |
+| Registers               | 32 general-purpose registers                       | 32 general-purpose registers                |
+| Register size           | MIPS32 → 32-bit                                    | RV32 → 32-bit                               |
+| Register naming         | `$t0`, `$t1`, `$s0`, etc.                          | `x5`, `x6`, etc. (`t0`, `t1` are ABI names) |
+| Instruction length      | 32 bits for MIPS32 basic instructions              | 32 bits for base RV32I                      |
+| Immediate               | Commonly 16-bit in I-type MIPS instructions        | 12-bit in I-type RV32I                      |
+| R-type                  | ✅                                                  | ✅                                           |
+| I-type                  | ✅                                                  | ✅                                           |
+| S-type                  | ❌                                                  | ✅                                           |
+| B-type                  | ❌ as a separate format                             | ✅                                           |
+| U-type                  | ❌                                                  | ✅                                           |
+| J-type                  | ✅                                                  | ❌ as a separate format; RISC-V has J-type   |
+| Zero register           | `$zero` = register 0                               | `x0` = always 0                             |
+| ISA philosophy          | Older, relatively fixed ISA                        | Modern, modular ISA                         |
+| Extensions              | Various MIPS versions                              | `I`, `M`, `A`, `F`, `D`, `C`, `V`, etc.     |
+| Open ISA                | ❌                                                  | ✅                                           |
+| Your shown architecture | **MIPS**                                           | ❌                                           |
